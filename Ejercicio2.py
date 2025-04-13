@@ -30,7 +30,7 @@ def mostrar_polinomio(coeficientes):
                 terminos.append(f"{coeficiente}x^{grado - i}")
     return " + ".join(terminos) if terminos else "0"
 
-def evaluar_polinomio_simple(coeficientes, x):
+def evaluar_polinomio(coeficientes, x):
     
     grado = len(coeficientes) - 1
     resultado = 0
@@ -59,7 +59,7 @@ if __name__ == "__main__":
             
             try:
                 valor_x = float(input("Ingrese el valor de x para evaluar el polinomio: "))
-                evaluar_polinomio_simple(coeficientes, valor_x)
+                evaluar_polinomio(coeficientes, valor_x)
             except ValueError:
                 print("Por favor, ingrese un valor numérico para x.")
 

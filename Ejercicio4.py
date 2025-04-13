@@ -1,4 +1,4 @@
-def main_simple():
+def ConteoPalabras():
     print("Conteo de ocurrencias de una palabra en una cadena")
     print("----------------------------------------------------")
 
@@ -13,4 +13,4 @@ def main_simple():
     print(f"\nLa palabra '{palabra_buscar}' aparece {ocurrencias} veces en la cadena.")
 
 if __name__ == "__main__":
-    main_simple()
+    ConteoPalabras()
