@@ -48,15 +48,15 @@ if __name__ == "__main__":
         if n < 0:
             print("Por favor, ingrese un número entero no negativo.")
         else:
-            # a) Generar y mostrar los coeficientes del polinomio
+            
             coeficientes = generar_coeficientes(n)
             print(f"\nLos coeficientes de (x+1)^{n} son: {coeficientes}")
 
-            # Mostrar el polinomio
+            
             polinomio_str = mostrar_polinomio(coeficientes)
             print(f"El polinomio (x+1)^{n} es: {polinomio_str}")
 
-            # b) Evaluar el polinomio para un x dado
+            
             try:
                 valor_x = float(input("Ingrese el valor de x para evaluar el polinomio: "))
                 evaluar_polinomio_simple(coeficientes, valor_x)
